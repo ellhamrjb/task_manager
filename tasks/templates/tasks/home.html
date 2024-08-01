@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'tasks/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Task Manager</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'project-list' %}">Projects</a></li>
+                <li><a href="{% url 'task-list' %}">Tasks</a></li>
+                <li><a href="{% url 'comment-list' %}">Comments</a></li>
+                <li><a href="{% url 'tag-list' %}">Tags</a></li>
+                <li><a href="{% url 'attachment-list' %}">Attachments</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
